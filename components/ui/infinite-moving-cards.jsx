@@ -79,12 +79,12 @@ export const InfiniteMovingCards = ({
        >
          <blockquote className="relative max-h-[160px]">
            <div className="relative z-20 flex flex-row items-center gap-3">
-           <Avatar><Image src={item.pfpdir} width={50} height={50} alt="ass" /></Avatar>
+           <Avatar><Image className="select-none" src={item.pfpdir} width={50} height={50} alt="ass" /></Avatar>
              <span className="flex flex-row justify-between flex-1 gap-1">
-               <span className=" text-sm leading-[1.6] text-black font-bold">
+               <span className=" text-sm leading-[1.6] select-none text-black font-bold">
                  {item.name}
                </span>
-               <span className=" text-sm leading-[1.6] text-black font-normal">
+               <span className=" text-sm leading-[1.6] select-none text-black font-normal">
                  {item.rating}
                </span>
              </span>

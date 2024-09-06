@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Sohne;
+  src: url(../app/assets/font/Sohne.otf);
+}
+@font-face {
+  font-family: SohneLI;
+  src: url(../app/assets/font/SohneLI.otf);
+}
+@font-face {
+  font-family: SohneK;
+  src: url(../app/assets/font/SohneK.otf);
+}
+
 body {
   height:100vh;
   margin: 0;
@@ -78,7 +91,7 @@ body {
 }
 
 .rsgrad2 {
-    background: linear-gradient(0deg, #ffffff -40%, #811d27 100%);
+  background: linear-gradient(-180deg, #6D0A13 10%, #492323 30%);
 }
 
 .scrollbar {
