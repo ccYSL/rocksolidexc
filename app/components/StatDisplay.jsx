@@ -5,7 +5,7 @@ import ScrollTrigger from "gsap-trial/ScrollTrigger"
 
 export default function StatDisplay() {
     return (
-        <div className="flex flex-row sm:gap-5 lg:gap-8 m-3">
+        <div className="flex xs flex-row gap-2 sm:gap-5 lg:gap-8 m-3">
             <Stat t1={20} suffix="+" t2="Services Offered" />
             <Stat t1={6} suffix="+" t2="Years of Experience" />
             <Stat t1={200} suffix="+" t2="Completed Jobs" />
@@ -43,14 +43,14 @@ const Stat = (props) => {
     }, [props.t1]);
 
     return (
-        <div className="flex flex-col" id="stHolder">
-            <div className="border-solid border-l-[#8E2821] border-l-4 h-fit text-gray-200 text-4xl">
-                <span className="ml-1 p-1">
+        <div className="flex flex-col items-center md:items-start" id="stHolder">
+            <div className="border-solid border-l-[#8E2821] border-l-4 h-fit md:text-left text-gray-200 text-3xl sm:text-4xl">
+                <span className="ml-2">
                     {statVal + props.suffix}
                 </span>
             </div>
-            <div>
-                <span className="md:text-md lg:text-xl text-gray-200 font-[sohneLI]">
+            <div className="text-center md:text-left">
+                <span className="lg:text-xl text-gray-200 font-[sohneLI]">
                     {props.t2}
                 </span>
             </div>

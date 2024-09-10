@@ -14,7 +14,7 @@ export default function GalleryGrid(){
     // })
     return(
         <section className="">
-            <div className="flex flex-col md:flex-row gap-5">
+            <div className="flex flex-col sm:flex-row gap-5">
                 <Card src="/jobs/photo_3_2024-09-04_12-29-23.jpg" />
                 <Card src="/jobs/photo_7_2024-09-04_12-29-23.jpg" />
                 <Card src="/jobs/photo_4_2024-09-04_12-30-40.jpg" />
@@ -29,7 +29,7 @@ const Card = ({src}) => {
   return(<CardContainer className="raise shadow-2xl">
     <CardBody className="h-auto rounded-xl w-fit">
         <CardItem translateZ="50">
-            <Image src={src} className="rounded-xl" width={212} height={316} />
+            <Image src={src} className="rounded-xl w-[310px] sm:w-[232px]" width={232} height={336} />
         </CardItem>
     </CardBody>
 </CardContainer>)

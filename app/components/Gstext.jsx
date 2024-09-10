@@ -12,10 +12,10 @@ export default function Gstext(props){
         gsap.fromTo(gtext.words, {
             rotateZ: 20,
             fontSize: 5,
-        }, {rotateZ: 0, stagger: 0.1, fontSize: 49, duration: 0.4, scrollTrigger: ".gstext"});
+        }, {rotateZ: 0, stagger: 0.1, fontSize: "3.5rem", duration: 0.4, scrollTrigger: ".gstext"});
     })
     return(
-        <div className="flex justify-center h-fit pt-5">
+        <div className="flex justify-center sm:h-[175px] md:h-fit pt-5">
             <h1 className="text-5xl gstext font-[sohneLI] text-center relative text-gray-200 textshadow2 overflow-x-hidden overflow-y-hidden pb-3">{props.text}</h1>
         </div>
     )

@@ -12,12 +12,12 @@ const socials = [
     {
         title: "Instagram",
         icon: (<IconBrandInstagram className="h-full w-full text-white"/>),
-        href: "https://instagram.com"
+        href: "https://www.instagram.com/rock.solid.excavation/"
     },
     {
         title: "Facebook",
         icon: (<IconBrandFacebook className="h-full w-full text-white"/>),
-        href: "https://facebook.com/rocksolidexcavation"
+        href: "https://facebook.com/rocksolidexcavation/"
     },
     {
         title: "Linkedin",
@@ -39,7 +39,7 @@ export default function Header(){
                         <Button text='Home'></Button>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <NavigationMenuTrigger className="bg-[#b32b39] hover:bg-[#68121B] text-white hover:text-white ">
+                        <NavigationMenuTrigger className="bg-[#b32b39] hover:bg-[#68121B] text-white hover:text-white">
                             Services
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
@@ -68,7 +68,7 @@ export default function Header(){
 }
 function NavItem(props){
     return(<div className="flex items-center group relative hover:font-semibold justify-center h-fit p-2 w-[270px] hover:bg-gray-300 text-black rounded-sm text-center transition-colors border-solid border-b-[2px] border-gray-300">
-        <span className="font-3xl  whitespace-nowrap">{props.title}</span>
+        <span className="font-3xl whitespace-nowrap">{props.title}</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4 group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-transform mt-[2px] fill-current text-black" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
     </div>)
 }

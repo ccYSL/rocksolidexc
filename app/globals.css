@@ -14,6 +14,23 @@
   font-family: SohneK;
   src: url(../app/assets/font/SohneK.otf);
 }
+@media (max-width: 335px) {
+  .xs {
+    flex-direction: column;
+  }
+}
+
+.svglarge:hover {
+  transform: scale(1.2)
+}
+.svglarge {
+  transition: all .5s;
+  transform-origin: 50% 50%;
+}
+
+html {
+  width: 100%
+}
 
 body {
   height:100vh;
