@@ -22,20 +22,20 @@ export default function Footer(){
                         </div>
                     </div>
                     <div className="flex flex-row gap-10 font-[sohne] items-center text-xl text-white p-4 justify-center">
-                        <a href="http://" className="svglarge">Our Story</a>
-                        <a href="http://" className="svglarge">Contact Us</a>
+                        <a href="http://" className="hEnlargeM">Our Story</a>
+                        <a href="http://" className="hEnlargeM">Contact Us</a>
                     </div>
                 </div>
                 <div className="md:h-[30%] border-solid border-[#591F1C] border-t-[1px] flex flex-col md:flex-row justify-between items-center md:px-5 p-5 gap-2">
                     <div className="h-[32px] w-[130px] flex md:flex-row gap-3">
                     <a href="https://www.instagram.com/rock.solid.excavation/" target="_blank">
-                            <IconBrandInstagram className="h-full w-full text-[#C7C7C7] svglarge"/>
+                            <IconBrandInstagram className="h-full w-full text-[#C7C7C7] hEnlarge"/>
                             </a>
                     <a href="https://facebook.com/rocksolidexcavation/" target="_blank">
-                            <IconBrandFacebook className="h-full w-full text-[#C7C7C7] svglarge"/>
+                            <IconBrandFacebook className="h-full w-full text-[#C7C7C7] hEnlarge"/>
                             </a>
                     <a href="https://www.linkedin.com/in/drew-dobyns-145146257/" target="_blank">
-                            <IconBrandLinkedin className="h-full w-full text-[#C7C7C7] svglarge"/>
+                            <IconBrandLinkedin className="h-full w-full text-[#C7C7C7] hEnlarge"/>
                             </a>
                     </div>
                     <div className="text-[#959595] flex flex-row gap-5 text-md text-center [&>*>span]:font-[sohneK] whitespace-nowrap">

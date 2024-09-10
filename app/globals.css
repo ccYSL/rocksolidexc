@@ -20,13 +20,17 @@
   }
 }
 
-.svglarge:hover {
+.hEnlarge:hover {
   transform: scale(1.2)
 }
-.svglarge {
+.hEnlargeM:hover {
+  transform: scale(1.1)
+}
+.hEnlarge, .hEnlargeM {
   transition: all .5s;
   transform-origin: 50% 50%;
 }
+
 
 html {
   width: 100%
