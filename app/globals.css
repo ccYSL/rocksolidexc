@@ -37,8 +37,14 @@ html {
 }
 
 body {
-  height:100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
+}
+
+footer {
+  margin-top: auto;
 }
 
 @layer base {
