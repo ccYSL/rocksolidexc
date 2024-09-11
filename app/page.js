@@ -1,16 +1,13 @@
 import Bestflip from "./components/Bestflip";
-import Header from "./components/Header";
 import "@/app/css/home.css"
 import RevScroll from "./components/RevScroll";
 import Gstext from "./components/Gstext";
 import StatDisplay from "./components/StatDisplay";
 import GalleryGrid from "./components/GalleryGrid";
 import Qualities from "./components/Qualities";
-import Footer from "./components/Footer";
 
 export default function Home(){
   return(<>
-  <Header />
   <main>
     <div className="h-[77vh] homeback pt-9 lg:pt-16 pb-5">
     <Bestflip />
@@ -32,6 +29,5 @@ export default function Home(){
     <Qualities />
     </section>
   </main>
-  <Footer />
   </>)
 }
