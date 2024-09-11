@@ -36,7 +36,7 @@ export default function Header(){
             <NavigationMenu className="ml-auto">
                 <NavigationMenuList className="gap-1 hidden lg:inline-flex">
                     <NavigationMenuItem>
-                        <Button text='Home'></Button>
+                        <a href="/"><Button text='Home'></Button></a>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger className="bg-[#b32b39] hover:bg-[#68121B] text-white hover:text-white">
@@ -44,14 +44,15 @@ export default function Header(){
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
                         <ul className="flex flex-col bg-gray-200 gap-1 p-4 w-fit ">
-                            <NavItem title="Cincinnati Land Excavation" />
-                            <NavItem title="Residential Excavation" />
-                            <NavItem title="Cincinnati Land Trenching" />
-                            <NavItem title="Cincinnati Concrete Installation" />
-                            <NavItem title="Gravel Driveway Services" />
-                            <NavItem title="French Drains and Yard Drainage" />
-                            <NavItem title="Honeysuckle Removal" />
-                            <NavItem title="Driveway Culvert Installation" />
+                            <NavItem title="Cincinnati Land Excavation" href="/cincinnati-land-excavation-1" />
+                            <NavItem title="Residential Excavation" href="/residential-excavation-cincinnati-ohio" />
+                            <NavItem title="Land Grading" href="/cincinnati-land-grading" />
+                            <NavItem title="Cincinnati Land Trenching" href="/cincinnati-land-trenching" />
+                            <NavItem title="Cincinnati Concrete Installation" href="/concrete-installation" />
+                            <NavItem title="Gravel Driveway Services" href="/cincinnati-gravel-driveway-services" />
+                            <NavItem title="French Drains and Yard Drainage" href="/french-drains-yard-drainage-cincinnati" />
+                            <NavItem title="Honeysuckle Removal" href="/cincinnati-honeysuckle-removal-cincinnati-ohio" />
+                            <NavItem title="Driveway Culvert Installation" href="/driveway-culvert-installation" />
                         </ul>
                         </NavigationMenuContent>
                     </NavigationMenuItem>
@@ -59,16 +60,18 @@ export default function Header(){
                         <Button text='About'></Button>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Button text='Contact Us'></Button>
+                        <a href="/contact-1"><Button text='Contact Us'></Button></a>
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
     </header>
     )
 }
-function NavItem(props){
-    return(<div className="flex items-center group relative hover:font-semibold justify-center h-fit p-2 w-[270px] hover:bg-gray-300 text-black rounded-sm text-center transition-colors border-solid border-b-[2px] border-gray-300">
-        <span className="font-3xl whitespace-nowrap">{props.title}</span>
+function NavItem({title, href}){
+    return(<a href={href}>
+        <div className="flex items-center group relative hover:font-semibold justify-center h-fit p-2 w-[270px] hover:bg-gray-300 text-black rounded-sm text-center transition-colors border-solid border-b-[2px] border-gray-300">
+        <span className="font-3xl whitespace-nowrap">{title}</span>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4 group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-transform mt-[2px] fill-current text-black" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
-    </div>)
+    </div>
+    </a>)
 }
