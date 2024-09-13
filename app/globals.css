@@ -7,6 +7,10 @@
   src: url(../app/assets/font/Sohne.otf);
 }
 @font-face {
+  font-family: SohneL;
+  src: url(../app/assets/font/SohneL.otf);
+}
+@font-face {
   font-family: SohneLI;
   src: url(../app/assets/font/SohneLI.otf);
 }
@@ -41,6 +45,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  background-color: #472727;
 }
 
 footer {

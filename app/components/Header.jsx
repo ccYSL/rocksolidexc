@@ -1,7 +1,7 @@
 "use client"
 
 import "@/app/css/header.css"
-import Button from "./sub-components/Button"
+import { Button } from "@/components/ui/button"
 import Logo from "./sub-components/Logo"
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu"
 import { FloatingDock } from "@/components/ui/floating-dock"
@@ -36,7 +36,7 @@ export default function Header(){
             <NavigationMenu className="ml-auto">
                 <NavigationMenuList className="gap-1 hidden lg:inline-flex">
                     <NavigationMenuItem>
-                        <a href="/"><Button text='Home'></Button></a>
+                        <a href="/"><Button variant="rsred">Home</Button></a>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <NavigationMenuTrigger className="bg-[#b32b39] hover:bg-[#68121B] text-white hover:text-white">
@@ -57,10 +57,10 @@ export default function Header(){
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Button text='About'></Button>
+                        <Button variant='rsred'>About</Button>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <a href="/contact-1"><Button text='Contact Us'></Button></a>
+                        <a href="/contact-1"><Button variant='rsred'>Contact Us</Button></a>
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>

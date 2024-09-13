@@ -29,7 +29,7 @@ const Card = ({src}) => {
   return(<CardContainer className="raise shadow-2xl">
     <CardBody className="h-auto rounded-xl w-fit">
         <CardItem translateZ="50">
-            <Image src={src} className="rounded-xl w-[310px] sm:w-[232px]" width={232} height={336} />
+            <Image src={src} className="rounded-xl w-[310px] sm:w-[232px]" alt="" width={232} height={336} />
         </CardItem>
     </CardBody>
 </CardContainer>)

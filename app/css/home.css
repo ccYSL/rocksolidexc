@@ -1,4 +1,4 @@
-.homeback {
+.homeback, .homeback2 {
     position: relative;
     overflow: hidden;
 }
@@ -12,6 +12,20 @@
     right: 0;
     bottom: 0;
     background: url("../assets/img/solid.jpg") no-repeat center center;
+    background-size: cover;
+    background-position-y: 39%;
+    filter: brightness(75%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);
+    z-index: -1;
+}
+
+.homeback2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../assets/img/homeback2.jpg") no-repeat center center;
     background-size: cover;
     background-position-y: 39%;
     filter: brightness(75%) contrast(100%) saturate(100%) blur(0px) hue-rotate(0deg);

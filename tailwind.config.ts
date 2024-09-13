@@ -1,3 +1,5 @@
+import daisyui from "daisyui";
+
 const defaultTheme = require("tailwindcss/defaultTheme");
  
 const colors = require("tailwindcss/colors");
@@ -89,8 +91,12 @@ module.exports = {
   },
   plugins: [
     require("tailwindcss-animate"),
+    require("daisyui"),
     addVariablesForColors
   ],
+  daisyui: {
+    base: false
+  },
   
 };
 function addVariablesForColors({ addBase, theme }: any) {

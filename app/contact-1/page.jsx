@@ -4,26 +4,31 @@ import RevScroll from "../components/RevScroll";
 
 const svglist = [
     <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 16 16"
-    fill="white"
-    className="h-4 w-4 opacity-70">
-    <path
-      d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
-  </svg>,
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="h-4 w-4 opacity-70"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"/></svg>,
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" className="h-4 w-4 opacity-70"><path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" /><path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" /></svg>
-]
+      key="svg-1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      fill="white"
+      className="h-4 w-4 opacity-70">
+      <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM12.735 14c.618 0 1.093-.561.872-1.139a6.002 6.002 0 0 0-11.215 0c-.22.578.254 1.139.872 1.139h9.47Z" />
+    </svg>,
+    <svg key="svg-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" className="h-4 w-4 opacity-70">
+      <path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z" />
+    </svg>,
+    <svg key="svg-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="white" className="h-4 w-4 opacity-70">
+      <path d="M2.5 3A1.5 1.5 0 0 0 1 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0 1 15 5.293V4.5A1.5 1.5 0 0 0 13.5 3h-11Z" />
+      <path d="M15 6.954 8.978 9.86a2.25 2.25 0 0 1-1.956 0L1 6.954V11.5A1.5 1.5 0 0 0 2.5 13h11a1.5 1.5 0 0 0 1.5-1.5V6.954Z" />
+    </svg>
+  ];
 
 export default function ContactUs(){
     return(
         <>
         <section className="homeback2 h-[500px] flex flex-col items-center pt-20 lg:pt-0 lg:justify-center gap-3">
             <div className="text-3xl md:text-5xl lg:text-6xl text-white font-[sohne] text-center textshadow">
-            We're Here To Help With Your Excavation Needs
+            We&apos;re Here To Help With Your Excavation Needs
             </div>
             <div className="text-xl md:text-2xl lg:text-3xl text-[#e0e0e0] font-[sohne] textshadow text-center">
-            Get any excavation or construction quote now, we have the a team of professional’s ready to to get in touch now
+            Get any excavation or construction quote now, We have a team of professional’s ready to to get in touch now
             </div>
         </section>
         <section className="text-[#e0e0e0] font-[sohneLI] flex flex-col items-center pt-5 md:pt-16 lg:text-4xl text-2xl pb-10">
