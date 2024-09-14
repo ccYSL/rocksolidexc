@@ -27,13 +27,13 @@ export default function ContactUs(){
             <div className="text-3xl md:text-5xl lg:text-6xl text-white font-[sohne] text-center textshadow">
             We&apos;re Here To Help With Your Excavation Needs
             </div>
-            <div className="text-xl md:text-2xl lg:text-3xl text-[#e0e0e0] font-[sohne] textshadow text-center">
+            <div className="text-2xl md:text-3xl p-1 lg:text-3xl text-[#e0e0e0] font-[sohne] textshadow text-center">
             Get any excavation or construction quote now, We have a team of professional’s ready to to get in touch now
             </div>
         </section>
         <section className="text-[#e0e0e0] font-[sohneLI] flex flex-col items-center pt-5 md:pt-16 lg:text-4xl text-2xl pb-10">
             <div className="w-[90%] xl:w-3/5">
-            <span className="text-2xl md:text-4xl lg:text-5xl p-3 text-white">
+            <span className="text-3xl md:text-4xl lg:text-5xl p-3 text-white">
                 Get a Free Quote Today
             </span>
             <div className="flex items-center">
@@ -77,7 +77,7 @@ export default function ContactUs(){
             </div>
             </div>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.8933712967882!2d-84.26579701003165!3d39.313340448936664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x433d8cfb00471aab%3A0x76a194cdd8d67cb1!2sRock%20Solid%20Excavation%20LLC!5e0!3m2!1sen!2sus!4v1726206323315!5m2!1sen!2sus" className="w-full h-4/6 rounded-xl shadow-2xl" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3086.8933712967882!2d-84.26579701003165!3d39.313340448936664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x433d8cfb00471aab%3A0x76a194cdd8d67cb1!2sRock%20Solid%20Excavation%20LLC!5e0!3m2!1sen!2sus!4v1726206323315!5m2!1sen!2sus" className="w-full h-4/6 rounded-xl shadow-2xl" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
         {/* <div className="w-full font-[sohneLI]">

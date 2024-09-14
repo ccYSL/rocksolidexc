@@ -28,6 +28,7 @@ const socials = [
 
 export default function Header(){
     return(
+        <>
     <header className="h-28 w-full flex flex-row items-center justify-center lg:pr-7">
             <div className=" flex flex-row">
                 <FloatingDock items={socials}/>
@@ -43,17 +44,7 @@ export default function Header(){
                             Services
                         </NavigationMenuTrigger>
                         <NavigationMenuContent>
-                        <ul className="flex flex-col bg-gray-200 gap-1 p-4 w-fit ">
-                            <NavItem title="Cincinnati Land Excavation" href="/cincinnati-land-excavation-1" />
-                            <NavItem title="Residential Excavation" href="/residential-excavation-cincinnati-ohio" />
-                            <NavItem title="Land Grading" href="/cincinnati-land-grading" />
-                            <NavItem title="Cincinnati Land Trenching" href="/cincinnati-land-trenching" />
-                            <NavItem title="Cincinnati Concrete Installation" href="/concrete-installation" />
-                            <NavItem title="Gravel Driveway Services" href="/cincinnati-gravel-driveway-services" />
-                            <NavItem title="French Drains and Yard Drainage" href="/french-drains-yard-drainage-cincinnati" />
-                            <NavItem title="Honeysuckle Removal" href="/cincinnati-honeysuckle-removal-cincinnati-ohio" />
-                            <NavItem title="Driveway Culvert Installation" href="/driveway-culvert-installation" />
-                        </ul>
+                            <NavItems />
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
@@ -64,7 +55,43 @@ export default function Header(){
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
+            <div className="block lg:hidden p-5 dropdown dropdown-end">
+                <div className="h-fit w-[35px] flex flex-col gap-[10px] transition-all duration-200 focus:gap-2 dropdown dropdown-end" tabIndex={0}>
+                    <div className="border-b-2"></div>
+                    <div className="border-b-2"></div>
+                    <div className="border-b-2"></div>
+                </div>
+                <ul
+          tabIndex={0}
+          className="menu dropdown-content bg-white rounded-lg z-20 mt-8 w-52 p-2 shadow text-black text-lg">
+          <li><a className="mobilenavitem" href="/">Home</a></li>
+          <li><a className="mobilenavitem">About Us</a></li>
+          <li><a className="mobilenavitem" href="/contact-1">Contact Us</a></li>
+          <li><button className="mobilenavitem" onClick={()=>document.getElementById("navModal").showModal()}>Services</button></li>
+        </ul>
+            </div>
     </header>
+        <dialog className="modal" id="navModal" onClick={()=>document.getElementById("navModal").close()}>
+        <div className="modal-box h-fit w-fit p-1 bg-white text-xl">
+        <NavItems />
+        </div>
+    </dialog>
+    </>
+    )
+}
+function NavItems(){
+    return(
+        <ul className="flex flex-col bg-gray-200 gap-1 p-4 w-fit">
+        <NavItem title="Cincinnati Land Excavation" href="/cincinnati-land-excavation-1" />
+        <NavItem title="Residential Excavation" href="/residential-excavation-cincinnati-ohio" />
+        <NavItem title="Land Grading" href="/cincinnati-land-grading" />
+        <NavItem title="Cincinnati Land Trenching" href="/cincinnati-land-trenching" />
+        <NavItem title="Cincinnati Concrete Installation" href="/concrete-installation" />
+        <NavItem title="Gravel Driveway Services" href="/cincinnati-gravel-driveway-services" />
+        <NavItem title="French Drains and Yard Drainage" href="/french-drains-yard-drainage-cincinnati" />
+        <NavItem title="Honeysuckle Removal" href="/cincinnati-honeysuckle-removal-cincinnati-ohio" />
+        <NavItem title="Driveway Culvert Installation" href="/driveway-culvert-installation" />
+    </ul>
     )
 }
 function NavItem({title, href}){

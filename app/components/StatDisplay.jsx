@@ -3,6 +3,8 @@ import { useEffect, useState } from "react"
 import gsap from "gsap-trial"
 import ScrollTrigger from "gsap-trial/ScrollTrigger"
 
+gsap.registerPlugin(ScrollTrigger)
+
 export default function StatDisplay() {
     return (
         <div className="flex xs flex-row gap-2 sm:gap-5 lg:gap-8 m-3">
@@ -22,7 +24,6 @@ const Stat = (props) => {
             const stepTime = 50;
             const numIncrements = 4000 / stepTime;
             const incrementAmount = props.t1 / numIncrements;
-    
             let currentVal = 0;
             const intervalId = setInterval(() => {
                 currentVal += incrementAmount;

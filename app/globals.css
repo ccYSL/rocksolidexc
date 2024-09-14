@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .mobilenavitem{
+  @apply hover:font-semibold border-b-2 hover:bg-[#C7C7C7] border-gray-300 transition-all active:!bg-[#bababa];
+  }
+  }
+
 @font-face {
   font-family: Sohne;
   src: url(../app/assets/font/Sohne.otf);

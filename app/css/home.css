@@ -38,3 +38,6 @@
 .textshadow2 {
     text-shadow: 2px 2px black;
 }
+ ul.menu li a:hover {
+    outline: none !important;
+  }
