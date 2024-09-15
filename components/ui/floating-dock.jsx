@@ -5,7 +5,7 @@
  **/
 
 import { cn } from "@/lib/utils";
-import { IconLayoutNavbarCollapse } from "@tabler/icons-react";
+import { IconBrandInstagram, IconBrandFacebook, IconBrandLinkedin } from "@tabler/icons-react"
 import { AnimatePresence, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -17,57 +17,23 @@ export const FloatingDock = ({
 }) => {
   return (<>
     <FloatingDockDesktop items={items} className={desktopClassName} />
-    <FloatingDockMobile items={items} className={mobileClassName} />
+    <MobileSocialBar items={items} className={mobileClassName} />
   </>);
 };
 
-const FloatingDockMobile = ({
-  items,
-  className
-}) => {
-  const [open, setOpen] = useState(false);
-  return (
-    (<div className={cn("relative block md:hidden", className)}>
-      <AnimatePresence>
-        {open && (
-          <motion.div
-            layoutId="nav"
-            className="absolute bottom-full mb-2 inset-x-0 flex flex-col gap-2">
-            {items.map((item, idx) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{
-                  opacity: 1,
-                  y: 0,
-                }}
-                exit={{
-                  opacity: 0,
-                  y: 10,
-                  transition: {
-                    delay: idx * 0.05,
-                  },
-                }}
-                transition={{ delay: (items.length - 1 - idx) * 0.05 }}>
-                <Link
-                  href={item.href}
-                  key={item.title}
-                  className="h-10 w-10 rounded-full dark:bg-neutral-900 flex items-center justify-center">
-                  <div className="h-4 w-4">{item.icon}</div>
-                </Link>
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-      </AnimatePresence>
-      <button
-        onClick={() => setOpen(!open)}
-        className="h-10 w-10 rounded-full dark:bg-neutral-800 flex items-center justify-center">
-        <IconLayoutNavbarCollapse className="h-5 w-5 text-neutral-500 dark:text-neutral-400" />
-      </button>
-    </div>)
-  );
-};
+const MobileSocialBar = ()=>(
+  <div className="grid grid-rows-2 grid-cols-2 items-center pl-5 gap-2 md:hidden">
+  <a href="https://www.instagram.com/rock.solid.excavation/" target="_blank">
+  <IconBrandInstagram className="h-7 w-7 text-[#C7C7C7] hEnlarge"/>
+  </a>
+<a href="https://facebook.com/rocksolidexcavation/" target="_blank">
+  <IconBrandFacebook className="h-7 w-7 text-[#C7C7C7] hEnlarge"/>
+  </a>
+<a href="https://www.linkedin.com/in/drew-dobyns-145146257/" target="_blank">
+  <IconBrandLinkedin className="h-7 w-7 text-[#C7C7C7] hEnlarge"/>
+  </a>
+</div>
+)
 
 const FloatingDockDesktop = ({
   items,
