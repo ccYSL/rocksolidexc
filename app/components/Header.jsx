@@ -29,7 +29,7 @@ const socials = [
 export default function Header(){
     return(
         <>
-    <header className="h-28 w-full flex flex-row items-center justify-center lg:pr-7">
+    <header className="h-28 w-full flex flex-row items-center justify-center lg:pr-7 rsheader">
             <div className=" flex flex-row">
                 <FloatingDock items={socials}/>
             </div>
@@ -48,7 +48,7 @@ export default function Header(){
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
-                        <Button variant='rsred'>About</Button>
+                    <a href="/about-1"><Button variant='rsred'>About</Button></a>
                     </NavigationMenuItem>
                     <NavigationMenuItem>
                         <a href="/contact-1"><Button variant='rsred'>Contact Us</Button></a>
@@ -65,7 +65,7 @@ export default function Header(){
           tabIndex={0}
           className="menu dropdown-content bg-white rounded-lg z-20 mt-8 w-52 p-2 shadow text-black text-lg">
           <li><a className="mobilenavitem" href="/">Home</a></li>
-          <li><a className="mobilenavitem">About Us</a></li>
+          <li><a className="mobilenavitem" href="/about-1">About Us</a></li>
           <li><a className="mobilenavitem" href="/contact-1">Contact Us</a></li>
           <li><button className="mobilenavitem" onClick={()=>document.getElementById("navModal").showModal()}>Services</button></li>
         </ul>
@@ -98,7 +98,7 @@ function NavItem({title, href}){
     return(<a href={href}>
         <div className="flex items-center group relative hover:font-semibold justify-center h-fit p-2 w-[270px] hover:bg-gray-300 text-black rounded-sm text-center transition-colors border-solid border-b-[2px] border-gray-300">
         <span className="font-3xl whitespace-nowrap">{title}</span>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="h-4 w-4 group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-transform mt-[2px] fill-current text-black" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" className="h-4 w-4 group-hover:-translate-y-[2px] group-hover:translate-x-[2px] transition-transform mt-[2px] fill-current text-black" aria-hidden="true"><path fillRule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clipRule="evenodd"></path></svg>
     </div>
     </a>)
 }
