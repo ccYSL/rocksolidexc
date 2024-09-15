@@ -24,6 +24,10 @@
   font-family: SohneK;
   src: url(../app/assets/font/SohneK.otf);
 }
+@font-face {
+  font-family: SohneBK;
+  src: url(../app/assets/font/SohneBK.otf);
+}
 @media (max-width: 335px) {
   .xs {
     flex-direction: column;
