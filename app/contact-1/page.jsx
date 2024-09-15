@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button"
 import "@/app/css/home.css"
-import RevScroll from "../components/RevScroll";
 
 const svglist = [
     <svg
@@ -24,7 +23,7 @@ export default function ContactUs(){
     return(
         <>
         <section className="homeback2 h-[500px] flex flex-col items-center pt-20 lg:pt-0 lg:justify-center gap-3">
-            <div className="text-3xl md:text-5xl lg:text-6xl text-white font-[sohne] text-center textshadow">
+            <div className="text-4xl md:text-5xl lg:text-6xl text-white font-[sohne] text-center textshadow">
             We&apos;re Here To Help With Your Excavation Needs
             </div>
             <div className="text-2xl md:text-3xl p-1 lg:text-3xl text-[#e0e0e0] font-[sohne] textshadow text-center">
