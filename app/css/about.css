@@ -1,3 +1,9 @@
 body {
-    background: linear-gradient(180deg, #5C1D1D 0%, #472727 53%, #5C1D1D 100%) !important;
+    background: linear-gradient(180deg, #472727 55%, #562626 80%, #4d1818 100%) !important;
 }
+.bgsize100 {
+    background-size: 100% 100%;
+}
+.grid-container > :last-child {
+    grid-column: span 2;
+  }
